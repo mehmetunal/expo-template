@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "barcode-essentials",
-    "slug": "barcode-essentials",
+    "name": "Expo Template by andregamma",
+    "slug": "expo-template",
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
