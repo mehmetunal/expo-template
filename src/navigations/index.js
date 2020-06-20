@@ -8,18 +8,13 @@ import AppNavigator from './app-navigator';
 const Stack = createStackNavigator();
 
 const Navigator = () => {
-  const isLoggedIn = true
+  const isLoggedIn = false
 
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        headerMode="none"
-      >
-        {isLoggedIn ? (
-          <Stack.Screen name="App" component={AppNavigator} />
-        ) : (
-          <Stack.Screen name="Auth" component={AuthNavigator} />
-        )}
+      <Stack.Navigator>
+        <Stack.Screen name="App" component={AppNavigator} />
+        <Stack.Screen name="Auth" component={AuthNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   )
